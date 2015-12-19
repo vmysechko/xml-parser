@@ -21,6 +21,7 @@ class GunDOM {
 	String origin;
 	Parameters pr;
 	String material;
+	
 
 	static class Parameters {
 		String distance;
