@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified"
+    xmlns:gunsspace="http://aaa.com/purchase">
+    <xs:import schemaLocation="gunsspace.xsd" namespace="http://aaa.com/purchase"/> 
+    <xs:element name="guns" type="GunsType" />
+    <xs:complexType name="GunsType">
+        <xs:sequence>
+            <xs:element name="gun" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="model" type="xs:string" />
+                        <xs:element name="handy" type="xs:string" />
+                        <xs:element name="origin" type="xs:string" />
+                        <xs:element name="parameters" type="gunsspace:gunParameters"/>
+                        <xs:element name="material" type="xs:string" />
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                  </xs:complexType>
+               </xs:element>    
+        </xs:sequence>
+    </xs:complexType>    
+</xs:schema>

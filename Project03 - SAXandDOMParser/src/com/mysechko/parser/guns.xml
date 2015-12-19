@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="guns.xsd"
+	xmlns:gunsspace="http://aaa.com/purchase">
+	<gun id="pistol01">
+		<model>Glock17</model>
+		<handy>One-hand</handy>
+		<origin>Austria</origin>
+		<parameters>
+			<gunsspace:distance>short</gunsspace:distance>
+			<gunsspace:charger>yes</gunsspace:charger>
+			<gunsspace:optics>no</gunsspace:optics>
+		</parameters>
+		<material>Plastic</material>
+	</gun>
+	<gun id="rifle01">
+	<model>HatsanEscort</model>
+		<handy>Two-hand</handy>
+		<origin>Turkie</origin>
+		<parameters>
+			<gunsspace:distance>middle</gunsspace:distance>
+			<gunsspace:charger>yes</gunsspace:charger>
+			<gunsspace:optics>yes</gunsspace:optics>
+		</parameters>
+		<material>Steel</material>
+	</gun>
+	<gun id="machinegun01">
+	<model>Kalashnikov</model>
+		<handy>Two-hand</handy>
+		<origin>USSR</origin>
+		<parameters>
+			<gunsspace:distance>long</gunsspace:distance>
+			<gunsspace:charger>yes</gunsspace:charger>
+			<gunsspace:optics>yes</gunsspace:optics>
+		</parameters>
+		<material>Steel</material>
+	</gun>
+</guns>
